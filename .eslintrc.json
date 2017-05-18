@@ -1,0 +1,249 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "plugins": [
+        "compat"
+    ],
+    "rules": {
+        "array-bracket-spacing": [
+            "error",
+            "never",
+            {
+                "singleValue": false,
+                "objectsInArrays": false,
+                "arraysInArrays": false
+            }
+        ],
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "camelcase": [
+            "error"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "comma-spacing": [
+            "error"
+        ],
+        "comma-style": [
+            "error",
+            "last"
+        ],
+        "compat/compat": 2,
+        "computed-property-spacing": [
+            "error",
+            "never"
+        ],
+        "curly": [
+            "error",
+            "all"
+        ],
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "dot-notation": [
+            "error",
+            {
+                "allowKeywords": false
+            }
+        ],
+        "eol-last": [
+            "error"
+        ],
+        "eqeqeq": [
+            "error"
+        ],
+        "func-call-spacing": [
+            "error"
+        ],
+        "func-style": [
+            "error"
+        ],
+        "id-length": [
+            "error",
+            {
+                "min": 2,
+                "exceptions": [
+                    "$"
+                ]
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "outerIIFEBody": 1,
+                "MemberExpression": 1,
+                "ArrayExpression": 1,
+                "ObjectExpression": 1,
+                "FunctionDeclaration": {
+                    "body": 1,
+                    "parameters": 1
+                },
+                "FunctionExpression": {
+                    "body": 1,
+                    "parameters": 1
+                },
+                "CallExpression": {
+                    "arguments": 1
+                }
+            }
+        ],
+        "keyword-spacing": [
+            "error"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "max-len": [
+            "error",
+            120
+        ],
+        "new-cap": [
+            "error"
+        ],
+        "newline-before-return": [
+            "error"
+        ],
+        "newline-per-chained-call": [
+            "error"
+        ],
+        "no-array-constructor": [
+            "error"
+        ],
+        "no-invalid-this": [
+            "error"
+        ],
+        "no-lonely-if": [
+            "error"
+        ],
+        "no-loop-func": [
+            "error"
+        ],
+        "no-multi-assign": [
+            "error"
+        ],
+        "no-multi-spaces": [
+            "error"
+        ],
+        "no-multi-str": [
+            "error"
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 1,
+                "maxBOF": 1
+            }
+        ],
+        "no-nested-ternary": [
+            "error"
+        ],
+        "no-new-func": [
+            "error"
+        ],
+        "no-new-object": [
+            "error"
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": true
+            }
+        ],
+        "no-plusplus": [
+            "error"
+        ],
+        "no-trailing-spaces": [
+            "error"
+        ],
+        "no-underscore-dangle": [
+            "error"
+        ],
+        "no-unneeded-ternary": [
+            "error",
+            {
+                "defaultAssignment": false
+            }
+        ],
+        // disabled only for this codnig standards guide, this line should be removed for real project
+        "no-unused-vars": "off",
+        "no-useless-escape": [
+            "error"
+        ],
+        "no-whitespace-before-property": [
+            "error"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "object-property-newline": [
+            "error"
+        ],
+        "one-var": [
+            "error",
+            {
+                "var": "never"
+            }
+        ],
+        "padded-blocks": [
+            "error",
+            "never"
+        ],
+        "quote-props": [
+            "error",
+            "consistent-as-needed"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "radix": [
+            "error",
+            "always"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "space-before-blocks": [
+            "error"
+        ],
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "always",
+                "named": "never"
+            }
+        ],
+        "space-in-parens": [
+            "error",
+            "never"
+        ],
+        "space-infix-ops": [
+            "error"
+        ],
+        "spaced-comment": [
+            "error",
+            "always"
+        ],
+        "strict": [
+            "error",
+            "function"
+        ],
+        "wrap-iife": [
+            "error",
+            "outside"
+        ]
+    }
+}

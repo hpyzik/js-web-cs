@@ -1,0 +1,15 @@
+{
+  "name": "js-web-cs",
+  "version": "0.1.0",
+  "description": "Simple boilerplate for browser-side javascript coding standard",
+  "license": "MIT",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint coding-standards/**/*"
+  },
+  "author": "hpyzik.dev@gmail.com",
+  "devDependencies": {
+    "browserslist": "1.7.6",
+    "eslint": "3.19.0",
+    "eslint-plugin-compat": "1.0.2"
+  }
+}
