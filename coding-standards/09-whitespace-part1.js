@@ -59,16 +59,6 @@
 
             var isJedi = false;
 
-            // good
-            if (isJedi) {
-                // ...
-            }
-
-            // bad
-            // if(isJedi) {
-            //   // ...
-            // }
-
             var cat = {
                 bite: function () {
                     // ...
@@ -84,6 +74,16 @@
             // var fightB = function fightB () {
             //     cat.bite ();
             // };
+
+            // good
+            if (isJedi) {
+                // ...
+            }
+
+            // bad
+            // if(isJedi) {
+            //   // ...
+            // }
         },
 
         'Set off operators with spaces': function () {

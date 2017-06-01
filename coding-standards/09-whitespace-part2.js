@@ -60,8 +60,8 @@
 
         'Do not add spaces inside parentheses': function () {
             // good
-            var barC = function (condition) {
-                return condition;
+            var barC = function (parameter) {
+                return parameter;
             };
 
             // bad
@@ -100,10 +100,24 @@
             // var bazB = { clark: 'kent' };
         },
 
+        'Maximum depth that blocks can be nested is 3': function () {
+            var isTrue = false;
+
+            if (isTrue) {
+                if (isTrue) {
+                    if (isTrue) {
+                        // Bellow block is nested too deeply
+                        // if (isTrue) {
+                        //     isTrue = false;
+                        // }
+                        isTrue = false;
+                    }
+                }
+            }
+        },
+
         'Others': function () {
             /*
-             Avoid having lines of code that are longer than 120 characters (including whitespace)
-
              Multiple empty lines disallowed
 
              End files with a single newline character

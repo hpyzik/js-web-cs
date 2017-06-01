@@ -19,7 +19,7 @@
             // ];
         },
 
-        'Avoid trailing commas': function () {
+        'Use trailing commas': function () {
             // good
             var heroB = {
                 firstName: 'Dana',
