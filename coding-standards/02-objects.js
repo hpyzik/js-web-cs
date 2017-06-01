@@ -1,87 +1,90 @@
 (function () {
     'use strict';
 
-    // * Use the literal syntax for object creation. eslint: no-new-object
+    var rules = {
 
-    // good
-    var itemB = {};
+        'Use the literal syntax for object creation': function () {
+            // good
+            var itemB = {};
 
-    // bad
-    // var itemA = new Object();
+            // bad
+            // var itemA = new Object();
+        },
 
-    // * Don't use computed property names when creating objects with dynamic property names
+        'Do not use computed property names when creating objects with dynamic property names': function () {
+            var getKey = function getKey(suffix) {
+                return 'a key named ' + suffix;
+            };
 
-    var getKey = function getKey(suffix) {
-        return 'a key named ' + suffix;
-    };
+            // good
+            var objA = {
+                id: 5,
+                name: 'San Francisco'
+            };
+            objA[getKey('enabled')] = true;
 
-    // good
-    var objA = {
-        id: 5,
-        name: 'San Francisco'
-    };
-    objA[getKey('enabled')] = true;
+            // bad
+            // var objB = {
+            //     id: 5,
+            //     name: 'San Francisco',
+            //     [getKey('enabled')]: true
+            // };
+        },
 
-    // bad
-    // var objB = {
-    //     id: 5,
-    //     name: 'San Francisco',
-    //     [getKey('enabled')]: true
-    // };
+        'Do not use object method shorthand': function () {
+            // good
+            var atom = {
+                value: 1,
 
-    // * Don't use object method shorthand.
+                addValue: function (value) {
+                    return atom.value + value;
+                }
+            };
 
-    // good
-    var atom = {
-        value: 1,
+            // bad
+            // var atomB = {
+            //     value: 1,
+            //
+            //     addValue(value) {
+            //         return atomB.value + value;
+            //     },
+            // };
+        },
 
-        addValue: function (value) {
-            return atom.value + value;
+        'Do not use property value shorthand': function () {
+            var lukeSkywalker = 'Luke Skywalker';
+
+            // good
+            var objC = {
+                lukeSkywalker: lukeSkywalker
+            };
+
+            // bad
+            // var objD = {
+            //     lukeSkywalker
+            // };
+        },
+
+        'Do not mix quoted and unquoted keys': function () {
+            // good
+            var goodA = {
+                foo: 3,
+                bar: 4
+            };
+
+            // good
+            var goodB = {
+                'foo': 3,
+                'bar': 4,
+                'data-blah': 5
+            };
+
+            // // bad
+            // var bad = {
+            //     foo: 3,
+            //     bar: 4,
+            //     'data-blah': 5
+            // };
         }
     };
-
-    // bad
-    // var atomB = {
-    //     value: 1,
-    //
-    //     addValue(value) {
-    //         return atomB.value + value;
-    //     },
-    // };
-
-    // * Don't use property value shorthand.
-
-    var lukeSkywalker = 'Luke Skywalker';
-
-    // good
-    var objC = {
-        lukeSkywalker: lukeSkywalker
-    };
-
-    // bad
-    // var objD = {
-    //     lukeSkywalker
-    // };
-
-    // * Do not mix quoted and unquoted keys.
-
-    // good
-    var goodA = {
-        foo: 3,
-        bar: 4
-    };
-
-    // good
-    var goodB = {
-        'foo': 3,
-        'bar': 4,
-        'data-blah': 5
-    };
-
-    // // bad
-    // var bad = {
-    //     foo: 3,
-    //     bar: 4,
-    //     'data-blah': 5
-    // };
 }());

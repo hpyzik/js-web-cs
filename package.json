@@ -4,7 +4,7 @@
     "description": "Simple boilerplate for browser-side javascript coding standard",
     "license": "MIT",
     "scripts": {
-        "lint": "./node_modules/.bin/eslint coding-standards/**/*"
+        "eslint": "./node_modules/.bin/eslint coding-standards/**/*"
     },
     "author": "hpyzik.dev@gmail.com",
     "engines": {
