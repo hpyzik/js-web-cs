@@ -19,6 +19,9 @@
 
         'Use shortcuts for booleans, but explicit comparisons for strings and numbers': function () {
             var isValid = true;
+            var min = 0;
+            var collection = [];
+
             // good
             if (isValid) {
                 // ...
@@ -37,8 +40,6 @@
                 // ...
             }
 
-            var min = 0;
-            var collection = [];
             // good
             if (collection.length > min) {
                 // ...

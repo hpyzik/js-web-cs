@@ -59,16 +59,6 @@
 
             var isJedi = false;
 
-            // good
-            if (isJedi) {
-                // ...
-            }
-
-            // bad
-            // if(isJedi) {
-            //   // ...
-            // }
-
             var cat = {
                 bite: function () {
                     // ...
@@ -84,6 +74,16 @@
             // var fightB = function fightB () {
             //     cat.bite ();
             // };
+
+            // good
+            if (isJedi) {
+                // ...
+            }
+
+            // bad
+            // if(isJedi) {
+            //   // ...
+            // }
         },
 
         'Set off operators with spaces': function () {
@@ -93,11 +93,26 @@
             var varZ = varX + varY;
             // bad
             // var z=x+5;
+        },
 
-            /*
-             Use indentation when making long method chains (more than 2 method chains).
-             Use a leading dot, which emphasizes that the line is a method call, not a new statement.
-             */
+        'When a statement is too long add line breaks before the operator': function () {
+            var varA = 'foo';
+            var varB = 'bar';
+            var varC = 'baa';
+
+            // good
+            var varZ = varA
+                + varB
+                + varC;
+
+            // bad
+            // var varY = varA +
+            //     varB +
+            //     varC;
+        },
+
+        ' Use indentation when making long method chains (more than 2 method chains)': function () {
+            // Use a leading dot, which emphasizes that the line is a method call, not a new statement.
 
             var jQuery = function () {
                 // ...

@@ -10,7 +10,7 @@
             };
 
             // best
-            var fooA = function bar() {
+            var fooA = function fooA() {
                 var functionBody = 'something';
             };
 
