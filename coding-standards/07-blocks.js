@@ -13,7 +13,7 @@
 
             // bad
             // if (test)
-            //   test = false;
+            //     test = false;
 
             // bad
             // if (test) test = false;
@@ -34,10 +34,10 @@
 
             // bad
             // if (test) {
-            //   // ...
+            //     // ...
             // }
             // else {
-            //   // ...
+            //     // ...
             // }
         }
     };

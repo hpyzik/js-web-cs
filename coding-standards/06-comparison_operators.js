@@ -58,8 +58,8 @@
 
             // bad
             // var fooA = maybe1 > maybe2
-            //   ? 'bar'
-            //   : value1 > value2 ? 'baz' : null;
+            //     ? 'bar'
+            //     : value1 > value2 ? 'baz' : null;
 
             // better
             var maybeNull = value1 > value2 ? 'baz' : null;

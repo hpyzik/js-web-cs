@@ -66,7 +66,7 @@
 
             // bad
             // var barD = function ( condition ) {
-            //   return condition;
+            //     return condition;
             // };
 
             // good
