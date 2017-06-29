@@ -69,10 +69,15 @@
         },
 
         'Avoid using unary increments and decrements (++, --)': function () {
+            // Because the unary ++ and -- operators are subject to automatic semicolon insertion,
+            // differences in whitespace can change semantics of source code.
+
             // bad
             // var num = 1;
             // num++;
             // --num;
+
+            // You can use unary operators ++ and -- in the afterthought (final expression) of a for loop
         }
     };
 }());

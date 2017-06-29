@@ -127,19 +127,37 @@
             "error",
             "unix"
         ],
-        "max-len": [
-            "error",
-            120
-        ],
-        "max-depth": [
-            "error",
-            3
-        ],
         "lines-around-directive": [
             "error",
             {
                 "before": "never",
                 "after": "always"
+            }
+        ],
+        "max-depth": [
+            "error",
+            3
+        ],
+        "max-len": [
+            "error",
+            120
+        ],
+        "max-lines": [
+            "error",
+            150
+        ],
+        "max-nested-callbacks": [
+            "error",
+            3
+        ],
+        "max-params": [
+            "error",
+            4
+        ],
+        "max-statements-per-line": [
+            "error",
+            {
+                "max": 1
             }
         ],
         "new-cap": [
@@ -247,7 +265,10 @@
             }
         ],
         "no-plusplus": [
-            "error"
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
         ],
         "no-return-assign": [
             "error"
@@ -311,6 +332,10 @@
             {
                 "var": "never"
             }
+        ],
+        "operator-linebreak": [
+            "error",
+            "before"
         ],
         "padded-blocks": [
             "error",
