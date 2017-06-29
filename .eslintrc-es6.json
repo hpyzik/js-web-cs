@@ -1,0 +1,21 @@
+{
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "ecmaFeatures": {
+        "modules": true
+    },
+    "rules": {
+//        "no-duplicate-imports": [
+//
+//        ],
+        "no-restricted-syntax": [
+            "error",
+            "CallExpression[callee.name='require']"
+        ],
+        "strict": [
+            "off",
+            "function"
+        ]
+    }
+}
