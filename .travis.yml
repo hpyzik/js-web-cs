@@ -7,5 +7,5 @@ install:
   - npm install
 
 script:
-  - npm run eslint
+  - npm run eslint && npm run eslint-es6
 

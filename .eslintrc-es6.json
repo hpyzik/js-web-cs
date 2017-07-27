@@ -1,21 +1,50 @@
 {
+    "env": {
+        "node": true
+    },
     "parserOptions": {
         "sourceType": "module"
     },
     "ecmaFeatures": {
         "modules": true
     },
+    "plugins": [
+        "import"
+    ],
     "rules": {
-//        "no-duplicate-imports": [
-//
-//        ],
-        "no-restricted-syntax": [
-            "error",
-            "CallExpression[callee.name='require']"
+        "func-style": [
+            "off"
+        ],
+        "import/first": [
+            "error"
+        ],
+        "import/no-amd": [
+            "error"
+        ],
+        "import/no-commonjs": [
+            "error"
+        ],
+        "import/no-mutable-exports": [
+            "error"
+        ],
+        "import/no-webpack-loader-syntax": [
+            "error"
+        ],
+        "import/prefer-default-export": [
+            "error"
+        ],
+        "import/unambiguous": [
+            "error"
+        ],
+        "no-duplicate-imports": [
+            "error"
         ],
         "strict": [
             "off",
             "function"
+        ],
+        "vars-on-top": [
+            "off"
         ]
     }
 }
